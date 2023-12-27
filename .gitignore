@@ -1,3 +1,5 @@
-# ignore all logs
-*.md
+# Ignore this gitignore file
+*.gitignore
+
+# Ignore the README.md file
 README.md
