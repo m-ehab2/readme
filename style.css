@@ -1,13 +1,132 @@
 @import url("https://fonts.googleapis.com/css?family=Quicksand:700|Khula:400");
-:root {
-	--text: #090402;
-	--background: #fcf7f2;
-	--primary: #cd6c35;
-	--secondary: #d3e38d;
-	--accent: #a1d760;
-}
 
 body {
-	font-weight: 400;
+	width: 100%;
 	height: 1000px;
+}
+:root {
+	--primary: #fe460b;
+	--secondary: #f19f7f;
+	--success: #4caf50;
+	--info: #2196f3;
+	--warning: #ff9800;
+	--danger: #f44336;
+	--light: #fcf7f2;
+	--dark: #0c0803;
+}
+
+:root[data-theme="light"] {
+	--text: #090402;
+	--background: var(--light);
+	--accent: #fa743e;
+}
+
+:root[data-theme="dark"] {
+	--text: #fdf8f7;
+	--background: var(--dark);
+	--accent: #c23b05;
+}
+
+nav {
+	background-color: var(--background);
+	color: var(--text);
+}
+
+.text-dot {
+	color: var(--text);
+}
+
+.navbar-brand {
+	color: var(--primary);
+	font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+	color: var(--text);
+	font-weight: bold;
+	transition: all 0.25s linear;
+}
+.navbar-nav {
+	gap: 5px;
+}
+.navbar-nav .nav-link:hover {
+	color: var(--background);
+	background-color: var(--primary);
+}
+
+.navbar-toggler-icon:hover.navbar-toggler-icon:focus {
+	color: var(--primary);
+}
+
+.dropdown-menu {
+	background-color: var(--background);
+	color: var(--text);
+	transition: all 0.25s linear;
+}
+.dropdown:hover > .dropdown-menu {
+	display: block;
+}
+
+.dropdown > .dropdown-toggle:active {
+	pointer-events: none;
+}
+.dropdown-item {
+	color: var(--text);
+	transition: all 0.15s linear;
+}
+
+.dropdown-item:hover {
+	background-color: var(--primary);
+	color: var(--background);
+}
+
+.main-carasoul-main-body {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	gap: 0.2vw;
+	width: 100%;
+	height: 500px;
+	padding: 10px;
+	margin-top: 1rem;
+	transition: all 0.5s ease-in-out;
+}
+
+.card {
+	display: inline-block;
+	position: relative;
+}
+
+.card-img-top {
+	transition: all 0.5s ease-in-out;
+	display: inline-block;
+	height: 100%;
+}
+.card-img-top {
+	object-fit: cover;
+	object-position: center;
+}
+
+.card-body {
+	width: 100%;
+	font-size: max(0.7rem, 1vw);
+	opacity: 0;
+	position: absolute;
+	transition: all 0.4s ease-in-out;
+	bottom: 0px;
+}
+
+.card:hover .card-img-top {
+	filter: brightness(50%);
+}
+.card:hover .card-body {
+	display: block;
+	opacity: 1;
+	bottom: 5%;
+}
+#test {
+	margin-top: 20px;
+}
+div.main-carasoul-main-body:hover {
+	transform: translate(-10%, 0%);
 }
