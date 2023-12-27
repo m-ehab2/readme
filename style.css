@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:700|Khula:400");
+:root {
+	--text: #090402;
+	--background: #fcf7f2;
+	--primary: #cd6c35;
+	--secondary: #d3e38d;
+	--accent: #a1d760;
+}
+
+body {
+	font-weight: 400;
+	height: 1000px;
+}
