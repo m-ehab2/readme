@@ -6,10 +6,20 @@
 		<title>Document</title>
 		<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 		<link href="/bootstrap.min.css" rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+		/>
+
 		<link rel="stylesheet" href="style.css" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+		<script
+			src="https://kit.fontawesome.com/9d0f60c920.js"
+			crossorigin="anonymous"
+		></script>
 	</head>
 	<body>
-		<nav class="navbar navbar-expand-lg bg-body-secondary p-3">
+		<nav class="navbar sticky-top navbar-expand-lg p-3">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="#">
 					readme<span><b class="text-dot">.</b>md</span>
@@ -83,78 +93,156 @@
 				</div>
 			</div>
 		</nav>
-		<div class="main-carasoul-main-body">
-			<div class="card">
-				<img
-					src="./Assets/images/Firefly hands dude hoody laptop programming dark 91762_Low.jpg"
-					class="card-img-top"
-					alt="a white male coding on laptop"
-				/>
-				<div class="card-body bg-body-secondary">
-					<h5 class="card-title">Coding in Action</h5>
-					<p class="card-text">
-						Image Description: Uncover the coder's world as he leans
-						against the wall, crafting lines of genius on his
-						laptop. Join us behind the screen for a peek into the
-						art of coding. 🚀💻 #CodeCraft #DeveloperLife
-					</p>
-					<a href="#" class="btn btn-primary">Go somewhere</a>
+		<div class="caraousel-container">
+			<div id="responsive" class="main-slider">
+				<div class="card">
+					<img
+						src="./Assets/images/Firefly hands dude hoody laptop programming dark 91762_Low.jpg"
+						class="card-img-top"
+						alt="a white male coding on laptop"
+					/>
+					<div class="card-body bg-body-secondary">
+						<h5 class="card-title">Coding in Action</h5>
+						<p class="card-text">
+							Image Description: Uncover the coder's world as he
+							leans against the wall, crafting lines of genius on
+							his laptop. Join us behind the screen for a peek
+							into the art of coding. 🚀💻 #CodeCraft
+							#DeveloperLife
+						</p>
+						<a href="#" class="btn btn-primary">Debug Some Code</a>
+					</div>
+				</div>
+				<div class="card">
+					<img
+						src="./Assets/images/Firefly hands laptop programming 22909_low.jpg"
+						class="card-img-top"
+						alt="a red haired woman coding outdoors"
+					/>
+					<div class="card-body bg-body-secondary">
+						<h5 class="card-title">
+							Coding in Comfort: A Café Session
+						</h5>
+						<p class="card-text">
+							Discover the world of coding from a cozy café
+							corner. 🚀☕ Peek into the tech life as hands
+							gracefully dance on a laptop, crafting innovation
+							one line at a time. Join us for a glimpse of
+							inspiration in every keystroke. #CodeLife
+							#CafeCoding 💻✨
+						</p>
+						<a href="#" class="btn btn-primary">Have a Drink</a>
+					</div>
+				</div>
+				<div class="card">
+					<img
+						src="./Assets/images/Firefly a guy coding in vs code 78627_low.jpg"
+						class="card-img-top"
+						alt="a red haired woman coding outdoors"
+					/>
+					<div class="card-body bg-body-secondary">
+						<h5 class="card-title">
+							Mastering MERN: Crafting Web Solutions with
+							Precision
+						</h5>
+						<p class="card-text">
+							Dive into MERN – MongoDB, Express.js, React, Node.js
+							– and master the art of building powerful, scalable
+							web applications. 🚀💻 Join us in exploring the
+							synergy of server-side and client-side development,
+							creating a seamless and modern web experience.
+							#MERNStack #WebDevMastery 🌐✨
+						</p>
+						<a href="#" class="btn btn-primary">Learn It</a>
+					</div>
+				</div>
+				<div class="card">
+					<img
+						src="./Assets/images/Firefly tech laptop desk phone 54038_low.jpg"
+						class="card-img-top"
+						alt="Laptop and a smart phone sitting on a desk"
+					/>
+					<div class="card-body bg-body-secondary">
+						<h5 class="card-title">
+							Code & Creativity: The Analog Connection
+						</h5>
+						<p class="card-text">
+							Explore the art of coding accompanied by the
+							timeless duo – pen and notepad. 📝💻 Uncover the
+							beauty of blending digital innovation with the
+							tactile feel of analog note-taking. Join us as we
+							embark on a journey where creativity flows
+							seamlessly from the screen to paper.
+							#CodingCreativity #AnalogCoding 🖊️💡
+						</p>
+						<a href="#" class="btn btn-primary">Create Something</a>
+					</div>
+				</div>
+				<div class="card">
+					<img
+						src="./Assets/images/Unofficial_JavaScript_logo_2.svg.png"
+						class="card-img-top"
+						alt="Javascript Logo"
+					/>
+					<div class="card-body bg-body-secondary">
+						<h5 class="card-title">
+							JavaScript Mastery: Unleashing the Power of the
+							Script
+						</h5>
+						<p class="card-text">
+							Dive into the heart of web development with
+							JavaScript – the language that powers the
+							interactive web. ⚡🌐 Let's unravel the mysteries
+							behind the iconic logo and explore the endless
+							possibilities it brings to the digital realm. Join
+							us in celebrating the elegance and efficiency of
+							JavaScript. #JavaScriptMagic #WebDevWizardry 🚀💻
+						</p>
+						<a href="#" class="btn btn-primary">Debug Some Code</a>
+					</div>
+				</div>
+				<div class="card">
+					<img
+						src="./Assets/images/Firefly team of developers and whiteboard 54038_low.jpg"
+						class="card-img-top"
+						alt="group of people and one of them is sketching on a white board"
+					/>
+					<div class="card-body bg-body-secondary">
+						<h5 class="card-title">
+							Collaborative Design: Sketching the Future on a
+							Whiteboard
+						</h5>
+						<p class="card-text">
+							Witness the synergy of minds as a group collaborates
+							on UI design, sketching the blueprint of future
+							digital experiences on a whiteboard canvas. 🎨💡
+							Immerse yourself in the creative process, where each
+							stroke brings life to innovative UI elements. Join
+							the journey of turning ideas into visual
+							masterpieces! #DesignCollaboration #UIInnovation
+							🖌️🌐
+						</p>
+						<a href="#" class="btn btn-primary">Grab a Chair</a>
+					</div>
 				</div>
 			</div>
-			<div class="card">
-				<img
-					src="./Assets/images/Firefly hands dude hoody laptop programming dark 91762_Low.jpg"
-					class="card-img-top"
-					alt="a white male coding on laptop"
-				/>
-				<div class="card-body bg-body-secondary">
-					<h5 class="card-title">Coding in Action</h5>
-					<p class="card-text">
-						Image Description: Uncover the coder's world as he leans
-						against the wall, crafting lines of genius on his
-						laptop. Join us behind the screen for a peek into the
-						art of coding. 🚀💻 #CodeCraft #DeveloperLife
-					</p>
-					<a href="#" class="btn btn-primary">Go somewhere</a>
-				</div>
-			</div>
-			<div class="card">
-				<img
-					src="./Assets/images/Firefly hands dude hoody laptop programming dark 91762_Low.jpg"
-					class="card-img-top"
-					alt="a white male coding on laptop"
-				/>
-				<div class="card-body bg-body-secondary">
-					<h5 class="card-title">Coding in Action</h5>
-					<p class="card-text">
-						Image Description: Uncover the coder's world as he leans
-						against the wall, crafting lines of genius on his
-						laptop. Join us behind the screen for a peek into the
-						art of coding. 🚀💻 #CodeCraft #DeveloperLife
-					</p>
-					<a href="#" class="btn btn-primary">Go somewhere</a>
-				</div>
-			</div>
-			<div class="card d-none">
-				<img
-					src="./Assets/images/Firefly hands dude hoody laptop programming dark 91762_Low.jpg"
-					class="card-img-top"
-					alt="a white male coding on laptop"
-				/>
-				<div class="card-body bg-body-secondary">
-					<h5 class="card-title">Coding in Action</h5>
-					<p class="card-text">
-						Image Description: Uncover the coder's world as he leans
-						against the wall, crafting lines of genius on his
-						laptop. Join us behind the screen for a peek into the
-						art of coding. 🚀💻 #CodeCraft #DeveloperLife
-					</p>
-					<a href="#" class="btn btn-primary">Go somewhere</a>
-				</div>
+			<div class="controlsContainer">
+				<a class="prevButton btn btn-primary" href="#"
+					><i class="fa-solid fa-chevron-left"></i
+				></a>
+				<a class="nextButton btn btn-primary" href="#"
+					><i class="fa-solid fa-chevron-right"></i
+				></a>
 			</div>
 		</div>
-		<div id="test">asdasd</div>
-
+		<section id="body-content">
+			<div class="conteiner">
+				<div class="row">
+					<div class="col-sm-8"></div>
+					<div class="col-sm-4"></div>
+				</div>
+			</div>
+		</section>
 		<script src="script.js"></script>
 		<script src="/bootstrap.bundle.min.js"></script>
 	</body>

@@ -210,7 +210,7 @@ body {
 	background-color: var(--bs-body-bg);
 	-webkit-text-size-adjust: 100%;
 	-webkit-tap-highlight-color: transparent;
-	overflow: hidden;
+	overflow-x: hidden;
 }
 hr {
 	margin: 1rem 0;
