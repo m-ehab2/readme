@@ -33,3 +33,14 @@ var slider = tns({
 	mouseDrag: true,
 	gutter: 5,
 });
+var slider1 = tns({
+	items: 1,
+	controls: true,
+	container: "#responsive1",
+	swipeAngle: false,
+	speed: 200,
+	nav: false,
+	controlsContainer: ".controlsContainer1",
+	mouseDrag: true,
+	gutter: 5,
+});
