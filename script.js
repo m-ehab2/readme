@@ -32,6 +32,8 @@ var slider = tns({
 	controlsContainer: ".controlsContainer",
 	mouseDrag: true,
 	gutter: 5,
+	// autoplay: true,
+	// autoplayTimeout: 3000,
 });
 var slider1 = tns({
 	items: 1,
@@ -41,6 +43,17 @@ var slider1 = tns({
 	speed: 200,
 	nav: false,
 	controlsContainer: ".controlsContainer1",
+	mouseDrag: true,
+	gutter: 5,
+});
+var slider2 = tns({
+	items: 1,
+	controls: true,
+	container: "#responsive2",
+	swipeAngle: false,
+	speed: 200,
+	nav: false,
+	controlsContainer: ".controlsContainer2",
 	mouseDrag: true,
 	gutter: 5,
 });

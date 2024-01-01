@@ -114,7 +114,8 @@ nav {
 	margin-top: 10px;
 }
 .caraousel-container .controlsContainer,
-.caraousel-container .controlsContainer1 {
+.caraousel-container .controlsContainer1,
+.caraousel-container .controlsContainer2 {
 	position: absolute;
 	bottom: 50%;
 	display: flex;
@@ -123,7 +124,8 @@ nav {
 	pointer-events: none;
 }
 .controlsContainer .btn,
-.controlsContainer1 .btn {
+.controlsContainer1 .btn,
+.controlsContainer2 .btn {
 	pointer-events: all;
 	transition: all 0.5s ease-in-out;
 	opacity: 0;
@@ -131,7 +133,8 @@ nav {
 }
 
 .caraousel-container:hover .controlsContainer > .btn,
-.caraousel-container:hover .controlsContainer1 > .btn {
+.caraousel-container:hover .controlsContainer1 > .btn,
+.caraousel-container:hover .controlsContainer2 > .btn {
 	opacity: 1;
 }
 section#body-content {
@@ -354,4 +357,8 @@ div.cat-post-number {
 	height: 3px;
 	flex-grow: 1;
 	border-bottom: 3px dotted var(--bs-gray-200);
+}
+.active {
+	background-color: var(--primary) !important;
+	border-color: unset !important;
 }
