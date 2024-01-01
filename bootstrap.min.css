@@ -2997,12 +2997,12 @@ fieldset:disabled .btn {
 }
 
 .btn-secondary {
-	--bs-btn-color: #fff;
-	--bs-btn-bg: #6c757d;
-	--bs-btn-border-color: #6c757d;
-	--bs-btn-hover-color: #fff;
-	--bs-btn-hover-bg: #5c636a;
-	--bs-btn-hover-border-color: #565e64;
+	--bs-btn-color: var(--bs-secondary-bg);
+	--bs-btn-bg: var(--bs-primary-rgb);
+	--bs-btn-border-color: var(--bs-secondary-bg);
+	--bs-btn-hover-color: var(--bs-primary-rgb);
+	--bs-btn-hover-bg: var(--bs-secondary-bg);
+	--bs-btn-hover-border-color: var(--bs-secondary-bg);
 	--bs-btn-focus-shadow-rgb: 130, 138, 145;
 	--bs-btn-active-color: #fff;
 	--bs-btn-active-bg: #565e64;

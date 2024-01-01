@@ -2,7 +2,6 @@
 
 body {
 	width: 100%;
-	height: 1000px;
 }
 :root {
 	--primary: #fe460b;
@@ -361,4 +360,21 @@ div.cat-post-number {
 .active {
 	background-color: var(--primary) !important;
 	border-color: unset !important;
+}
+.btn-secondary {
+	--bs-btn-color: var(--bs-secondary-bg);
+	--bs-btn-bg: var(--bs-link-color);
+	--bs-btn-border-color: var(--bs-secondary-bg);
+	--bs-btn-hover-color: var(--bs-link-color);
+	--bs-btn-hover-bg: var(--bs-secondary-bg);
+	--bs-btn-hover-border-color: var(--bs-secondary-bg);
+	--bs-btn-focus-shadow-rgb: 130, 138, 145;
+}
+.social-icons a {
+	width: 50px;
+	height: 50px;
+}
+.social-icons > a i {
+	width: 100%;
+	height: 100%;
 }
