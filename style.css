@@ -13,55 +13,31 @@ body {
 	--light: #fcf7f2;
 	--dark: #0c0803;
 }
-
 :root[data-theme="light"] {
 	--text: #090402;
 	--background: var(--light);
 	--accent: #fa743e;
 }
-
 :root[data-theme="dark"] {
 	--text: #fdf8f7;
 	--background: var(--dark);
 	--accent: #c23b05;
 }
-
-nav {
-	background-color: var(--background);
-	color: var(--text);
-	border-bottom: 3px solid var(--primary);
-}
-
-.text-dot {
-	color: var(--text);
-}
-
-.navbar-brand {
-	color: var(--primary);
-	font-weight: bold;
-}
-
 .navbar-nav .nav-link {
-	color: var(--text);
-	font-weight: bold;
 	transition: all 0.25s linear;
 }
-.navbar-nav {
-	gap: 5px;
+a.navbar-brand:hover span {
+	color: var(--dark);
+}
+a.navbar-brand:hover b {
+	color: var(--primary);
 }
 .navbar-nav .nav-link:hover {
 	color: var(--background);
 	background-color: var(--primary);
 }
-
 .navbar-toggler-icon:hover.navbar-toggler-icon:focus {
 	color: var(--primary);
-}
-
-.dropdown-menu {
-	background-color: var(--background);
-	color: var(--text);
-	transition: all 0.25s linear;
 }
 .dropdown:hover > .dropdown-menu {
 	display: block;
@@ -74,7 +50,6 @@ nav {
 	color: var(--text);
 	transition: all 0.15s linear;
 }
-
 .dropdown-item:hover {
 	background-color: var(--primary);
 	color: var(--background);
