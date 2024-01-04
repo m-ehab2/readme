@@ -24,52 +24,40 @@ body {
 	--accent: #c23b05;
 }
 .my-text {
-	font-size: 1vw;
+	font-size: 1.3vw;
 	line-height: 150%;
 }
-/* Heading */
 .my-heading {
 	font-size: 2vw;
 }
-/* Subheading */
 .my-subheading {
 	font-size: 1.4vw;
+	line-height: 100%;
 }
-/* Text */
-.my-text {
-	font-size: 1.2vw;
-}
-/* Small Text */
 .my-small-text {
-	font-size: 0.6vw;
+	font-size: 1vw;
+	line-height: 100%;
 }
-/* Additional styling for responsiveness to container width */
-
 @media (max-width: 768px) {
-	/* Heading */
-	/* Heading */
 	.my-heading {
 		font-size: 4vw;
 		line-height: 1.2;
 	}
-
-	/* Subheading */
 	.my-subheading {
 		font-size: 2.5vw;
 		line-height: 1.4;
 	}
-
-	/* Normal Text */
 	.my-text {
-		font-size: 1.8vw;
+		font-size: 2vw;
 		line-height: 1.5;
 	}
-
-	/* Small Text */
 	.my-small-text {
-		font-size: 1.5vw;
+		font-size: 1.7vw;
 		line-height: 1.6;
 	}
+}
+p {
+	font-family: sans-serif;
 }
 .navbar-nav .nav-link {
 	transition: all 0.25s linear;
@@ -78,14 +66,14 @@ a.navbar-brand:hover span {
 	color: var(--dark);
 }
 a.navbar-brand:hover b {
-	color: var(--primary);
+	color: var(--bs-primary);
 }
 .navbar-nav .nav-link:hover {
 	color: var(--background);
-	background-color: var(--primary);
+	background-color: var(--bs-primary);
 }
 .navbar-toggler-icon:hover.navbar-toggler-icon:focus {
-	color: var(--primary);
+	color: var(--bs-primary);
 }
 .dropdown:hover > .dropdown-menu {
 	display: block;
@@ -140,15 +128,13 @@ a.navbar-brand:hover b {
 	pointer-events: all;
 	transition: all 0.5s ease-in-out;
 	opacity: 0;
-	/* width: unset; */
+	width: unset;
 }
-
 .caraousel-container:hover .controlsContainer > .btn,
 .caraousel-container:hover .controlsContainer1 > .btn,
 .caraousel-container:hover .controlsContainer2 > .btn {
 	opacity: 1;
 }
-
 .blog-post {
 	box-shadow: 8px 8px 0 rgba(var(--bs-link-hover-color-rgb), 0.07);
 }
@@ -161,81 +147,34 @@ a.navbar-brand:hover b {
 .itemThumbs:hover img.zoom {
 	transform: scale(1.05);
 }
-.blog-outer {
-	/* display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-top: 10px;
-	gap: 10px; */
-}
-.blog-outer .meta {
-	/* display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 20px;
-	width: 60%; */
-}
-
 .meta div {
-	/* height: 30px; */
-	border-bottom: 1px solid var(--primary);
-	/* color: var(--bs-gray-800); */
+	border-bottom: 1px solid var(--bs-primary);
 }
-.meta span a {
-	color: var(--bs-gray-800);
+.meta div a {
+	color: var(--bs-gray-700);
 	transition: all 0.2s ease-in-out;
 }
-.meta span a:hover {
+.meta div a:hover {
 	color: var(--bs-primary);
 }
-.blog-title {
-	margin: 0px 10px;
-}
 .link-header {
-	color: var(--text);
-	font-size: 1.8rem;
+	color: var(--bs-gray-700);
 	transition: all 0.2s ease-in;
 }
 .link-header:hover {
-	color: var(--secondary);
-}
-.author-panel {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 100%;
-	overflow: hidden;
-}
-.author-panel img {
-	width: 15%;
-}
-.circular {
-	border-radius: 50%;
-}
-p {
-	font-family: sans-serif;
+	color: var(--bs-primary);
 }
 .blog-post-text {
-	width: 90%;
-	font-family: sans-serif;
-	font-size: small;
 	text-align: justify;
 }
 hr {
-	width: 90%;
-	background-color: #fcf7f2;
+	background-color: var(--bs-gray-500);
 }
 .blog-post-bottom {
-	display: flex;
-	justify-content: space-between;
 	width: 90%;
 }
 .list-group-item-action {
-	background-color: transparent;
-	border: 0px;
-	color: grey;
-	border-radius: 5px;
-	margin: 0px 3px;
+	color: var(--bs-gray-600);
 	pointer-events: none;
 }
 .list-group-item-action a {
@@ -243,19 +182,19 @@ hr {
 	color: inherit;
 }
 .list-group-item-action a:hover {
-	color: var(--accent);
+	color: var(--bs-primary);
 }
 .readmore-link {
 	color: black;
-	border-bottom: 2px solid var(--secondary);
-	height: 50px;
+	border-bottom: 2px solid var(--bs-primary);
+	/* height: 50px; */
+	padding-bottom: 10px;
 }
-
 div.readmore-link a {
-	color: var(--bs-black);
+	color: var(--bs-gray-700);
 }
 div.readmore-link a:hover {
-	color: var(--primary);
+	color: var(--bs-primary);
 }
 .itemThumbs * {
 	width: 100%;
@@ -263,25 +202,11 @@ div.readmore-link a:hover {
 .itemThumbs iframe {
 	height: 500px;
 }
-#responsive1 img {
-	object-fit: cover;
-	object-position: center;
-}
-.sidebar-head {
-	width: 100%;
-	padding-top: 10px;
-	display: flex;
-	justify-content: center;
-}
 .sidebar-head .readmore-link {
-	text-align: center;
-	height: 30px;
-	border-bottom: 3px solid var(--primary);
+	border-bottom: 3px solid var(--bs-primary);
 }
 
 .social-icons li {
-	margin: 0px;
-	padding: 5px;
 	text-align: center;
 }
 
@@ -302,10 +227,7 @@ div.readmore-link a:hover {
 	width: 90%;
 	padding: 5px;
 }
-.sidebar-post-text p {
-	text-align: center;
-	color: var(--bs-gray-600);
-}
+
 .sidebar-post-text img.circular {
 	background-color: var(--bs-tertiary-bg);
 	width: 30%;
