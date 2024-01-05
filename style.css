@@ -48,7 +48,7 @@
 		line-height: 1.4;
 	}
 	.my-text {
-		font-size: 2vw;
+		font-size: 2.2vw;
 		line-height: 1.5;
 	}
 	.my-small-text {
@@ -71,6 +71,9 @@ p {
 }
 a.navbar-brand:hover span {
 	color: var(--dark);
+}
+.footerlogo a.navbar-brand:hover b {
+	color: var(--bs-secondary-bg);
 }
 a.navbar-brand:hover b {
 	color: var(--bs-primary);
@@ -204,9 +207,6 @@ div.readmore-link a {
 div.readmore-link a:hover {
 	color: var(--bs-primary);
 }
-/* .itemThumbs * {
-	width: 100%;
-} */
 .itemThumbs iframe {
 	height: 500px;
 	width: 100%;
@@ -280,4 +280,14 @@ p.my-small-text {
 	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
 		sans-serif;
 	line-height: 130%;
+}
+div.square-container {
+	pointer-events: none;
+}
+a.square-container {
+	pointer-events: all;
+}
+.square-container {
+	min-width: 50px; /* Set a minimum width for the square */
+	min-height: 50px; /* Set a minimum height for the square */
 }

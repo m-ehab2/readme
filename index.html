@@ -405,6 +405,7 @@
 											<img
 												src="./Assets/images/1-secCarasoul.jpg"
 												alt=""
+												class="w-100"
 											/>
 										</div>
 										<div class="">
@@ -412,32 +413,36 @@
 												src="./Assets/images/2-secCarasoul.jpg"
 												alt=""
 												srcset=""
+												class="w-100"
 											/>
 										</div>
 										<div class="">
 											<img
 												src="./Assets/images/3-secCarasoul.jpg"
 												alt=""
+												class="w-100"
 											/>
 										</div>
 									</div>
 									<div
 										class="controlsContainer1 d-flex justify-content-between w-100"
 									>
-										<a
+										<button
 											class="prevButton btn btn-primary"
 											href="#responsive1"
-											><i
+										>
+											<i
 												class="fa-solid fa-chevron-left"
-											></i
-										></a>
-										<a
+											></i>
+										</button>
+										<button
 											class="nextButton btn btn-primary"
 											href="#responsive1"
-											><i
+										>
+											<i
 												class="fa-solid fa-chevron-right"
-											></i
-										></a>
+											></i>
+										</button>
 									</div>
 								</div>
 							</div>
@@ -1088,7 +1093,7 @@
 									<div class="input-group w-100">
 										<input
 											type="email"
-											class="form-control w-100"
+											class="form-control w-100 my-text"
 											id="validationCustomUsername"
 											placeholder="johndoe@gmail.com"
 											aria-describedby="inputGroupPrepend"
@@ -1100,7 +1105,7 @@
 									</div>
 									<button
 										type="submit"
-										class="btn btn-primary"
+										class="btn btn-primary my-text"
 									>
 										Get News
 									</button>
@@ -1759,22 +1764,22 @@
 				</div>
 			</div>
 		</section>
-		<footer>
-			<div class="bg-body-secondary w-100 m-0">
-				<div class="row h-100%">
-					<div class="col-sm-4 p-5 bg-primary">
+		<footer class="w-100">
+			<div class="bg-body-secondary w-100">
+				<div class="row w-100">
+					<div class="col-md-4 bg-primary p-5">
 						<div class="footer">
 							<div class="footerlogo mb-3">
 								<a
-									class="navbar-brand fs-3 text-secondary"
+									class="navbar-brand text-secondary gap-3 my-heading"
 									href="#"
 								>
-									readme<span
-										><b class="text-dot">.</b>md</span
+									<span
+										>readme<b class="text-dot">.</b>md</span
 									>
 								</a>
 							</div>
-							<div class="footer-text text-tertiary mb-2">
+							<div class="footer-text text-tertiary mb-2 my-text">
 								🚀 Thank you for exploring readme.md! Dive into
 								the world of coding challenges, tech projects,
 								and learning opportunities. Join our vibrant
@@ -1785,50 +1790,63 @@
 							<div
 								class="social-icons d-flex justify-content-start align-items-center gap-3"
 							>
-								<a
-									href="#"
-									class="btn btn-secondary circular btn-social border-2 d-flex justify-content-center align-items-center p-0"
+								<div
+									class="square-container d-flex justify-content-center align-items-center p-0"
 								>
-									<i
-										class="fab fa-twitter fa-2x d-flex justify-content-center align-items-center"
-									>
-									</i>
-								</a>
-								<a
-									href="#"
-									class="btn btn-secondary circular btn-social border-2 d-flex justify-content-center align-items-center p-0"
+									<a
+										href="#"
+										class="square-container btn btn-secondary border-2 btn-social d-flex justify-content-center align-items-center p-0"
+										><i
+											class="fab fa-twitter my-text fa-2x"
+										>
+										</i
+									></a>
+								</div>
+								<div
+									class="square-container d-flex justify-content-center align-items-center p-0"
 								>
-									<i
-										class="fab fa-facebook fa-2x d-flex justify-content-center align-items-center"
-									>
-									</i>
-								</a>
-								<a
-									href="#"
-									class="btn btn-secondary circular btn-social border-2 d-flex justify-content-center align-items-center p-0"
+									<a
+										href="#"
+										class="square-container btn btn-secondary border-2 btn-social d-flex justify-content-center align-items-center p-0"
+										><i
+											class="fab fa-facebook my-text fa-2x"
+										>
+										</i
+									></a>
+								</div>
+								<div
+									class="square-container d-flex justify-content-center align-items-center p-0"
 								>
-									<i
-										class="fab fa-google-plus-g fa-2x d-flex justify-content-center align-items-center"
-									>
-									</i>
-								</a>
-								<a
-									href="#"
-									class="btn btn-secondary circular btn-social border-2 d-flex justify-content-center align-items-center p-0"
+									<a
+										href="#"
+										class="square-container btn btn-secondary border-2 btn-social d-flex justify-content-center align-items-center p-0"
+										><i
+											class="fab fa-google-plus-g my-text fa-2x"
+										>
+										</i
+									></a>
+								</div>
+
+								<div
+									class="square-container d-flex justify-content-center align-items-center p-0"
 								>
-									<i
-										class="fab fa-github fa-2x d-flex justify-content-center align-items-center"
-									>
-									</i>
-								</a>
+									<a
+										href="https://github.com/m-ehab2"
+										class="square-container btn btn-secondary border-2 btn-social d-flex justify-content-center align-items-center p-0"
+										><i class="fab fa-github my-text fa-2x">
+										</i
+									></a>
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-8">
+					<div class="col-md-8 p-5">
 						<div class="row">
-							<div class="col-md-6 col-sm-4 mt-3">
-								<div class="sidebar-head">
-									<div class="readmore-link fs-5">
+							<div class="col-md-6 mt-3">
+								<div
+									class="sidebar-head w-100 py-2 d-flex justify-content-center"
+								>
+									<div class="readmore-link my-subheading">
 										Categories
 									</div>
 								</div>
@@ -1839,9 +1857,14 @@
 										<li
 											class="list-group-item d-flex text-center align-items-center w-100 border-0"
 										>
-											<div class="cat-name readmore-link">
+											<div
+												class="cat-name readmore-link my-text border-0"
+											>
 												<span
-													><a href="#" class="link">
+													><a
+														href="#"
+														class="link my-text"
+													>
 														Learning
 													</a></span
 												>
@@ -1849,16 +1872,23 @@
 											<div
 												class="dots border-primary"
 											></div>
-											<div class="cat-post-number">
+											<div
+												class="cat-post-number my-text"
+											>
 												<em>(15)</em>
 											</div>
 										</li>
 										<li
 											class="list-group-item d-flex text-center align-items-center w-100 border-0"
 										>
-											<div class="cat-name readmore-link">
+											<div
+												class="cat-name readmore-link border-0"
+											>
 												<span
-													><a href="#" class="link">
+													><a
+														href="#"
+														class="link my-text"
+													>
 														Teamwork
 													</a></span
 												>
@@ -1866,16 +1896,23 @@
 											<div
 												class="dots border-primary"
 											></div>
-											<div class="cat-post-number">
+											<div
+												class="cat-post-number my-text"
+											>
 												<em>(20)</em>
 											</div>
 										</li>
 										<li
 											class="list-group-item d-flex text-center align-items-center w-100 border-0"
 										>
-											<div class="cat-name readmore-link">
+											<div
+												class="cat-name readmore-link border-0"
+											>
 												<span
-													><a href="#" class="link">
+													><a
+														href="#"
+														class="link border-0 my-text"
+													>
 														Productivity
 													</a></span
 												>
@@ -1883,16 +1920,23 @@
 											<div
 												class="dots border-primary"
 											></div>
-											<div class="cat-post-number">
+											<div
+												class="cat-post-number my-text"
+											>
 												<em>(34)</em>
 											</div>
 										</li>
 										<li
 											class="list-group-item d-flex text-center align-items-center w-100 border-0"
 										>
-											<div class="cat-name readmore-link">
+											<div
+												class="cat-name readmore-link border-0"
+											>
 												<span
-													><a href="#" class="link">
+													><a
+														href="#"
+														class="link border-0 my-text"
+													>
 														Design
 													</a></span
 												>
@@ -1907,9 +1951,14 @@
 										<li
 											class="list-group-item d-flex text-center align-items-center w-100 border-0"
 										>
-											<div class="cat-name readmore-link">
+											<div
+												class="cat-name readmore-link border-0"
+											>
 												<span
-													><a href="#" class="link">
+													><a
+														href="#"
+														class="link my-text"
+													>
 														Career
 													</a></span
 												>
@@ -1917,16 +1966,23 @@
 											<div
 												class="dots border-primary"
 											></div>
-											<div class="cat-post-number">
+											<div
+												class="cat-post-number my-text"
+											>
 												<em>(7)</em>
 											</div>
 										</li>
 										<li
 											class="list-group-item d-flex text-center align-items-center w-100 border-0"
 										>
-											<div class="cat-name readmore-link">
+											<div
+												class="cat-name readmore-link border-0"
+											>
 												<span
-													><a href="#" class="link">
+													><a
+														href="#"
+														class="link my-text"
+													>
 														Collaboration
 													</a></span
 												>
@@ -1934,24 +1990,26 @@
 											<div
 												class="dots border-primary"
 											></div>
-											<div class="cat-post-number">
+											<div
+												class="cat-post-number my-text"
+											>
 												<em>(33)</em>
 											</div>
 										</li>
 									</ul>
 								</div>
 							</div>
-							<div class="col-md-6 col-sm-4 mt-3">
+							<div class="col-md-6 mt-3">
 								<div class="sidebar-head">
-									<div class="readmore-link fs-5">
+									<div class="readmore-link my-heading">
 										Recent Posts
 									</div>
 								</div>
 								<div class="post-text mt-2">
-									<h4 class="fs-5">
+									<h4 class="my-subheading">
 										<a href=""> Planning and Ideation </a>
 									</h4>
-									<p>
+									<p class="my-text">
 										ideas take shape as the team
 										collaborates on planning and defining
 										the project's goals and requirements.
@@ -1960,10 +2018,12 @@
 										<div
 											class="date d-flex align-items-center bg-primary text-secondary"
 										>
-											<i class="fa-regular fa-calendar">
+											<i
+												class="fa-regular fa-calendar my-text"
+											>
 											</i>
 											<p
-												class="d-flex align-items-center m-0"
+												class="d-flex align-items-center m-0 my-text"
 											>
 												<small>
 													<em>24-12-2023</em>
@@ -1973,10 +2033,12 @@
 										<div
 											class="d-flex align-items-center btn btn-primary"
 										>
-											<i class="fa-regular fa-comments">
+											<i
+												class="fa-regular fa-comments my-text"
+											>
 											</i>
 											<p
-												class="d-flex align-items-center m-0"
+												class="d-flex align-items-center m-0 my-text"
 											>
 												<small>
 													<em><a href="#">16</a></em>
@@ -1986,10 +2048,10 @@
 									</div>
 								</div>
 								<div class="post-text mt-2">
-									<h4 class="fs-5">
+									<h4 class="my-subheading">
 										<a href=""> Testing and Deployment </a>
 									</h4>
-									<p>
+									<p class="my-text">
 										Testing ensures the product meets
 										standards, and deployment marks the
 										culmination of efforts.
@@ -1998,10 +2060,12 @@
 										<div
 											class="date d-flex align-items-center bg-primary text-secondary"
 										>
-											<i class="fa-regular fa-calendar">
+											<i
+												class="fa-regular fa-calendar my-text"
+											>
 											</i>
 											<p
-												class="d-flex align-items-center m-0"
+												class="d-flex align-items-center m-0 my-text"
 											>
 												<small>
 													<em>24-12-2023</em>
