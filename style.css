@@ -68,7 +68,54 @@
 	li a.nav-link {
 		padding: 8px 5px;
 	}
+	.social-icons a.square-container {
+		padding: 5px;
+		width: 35px;
+		height: 35px;
+	}
 }
+@media (max-width: 500px) {
+	.my-heading {
+		font-size: 4vw;
+		line-height: 1.2;
+	}
+	.my-subheading {
+		font-size: 2.6vw;
+		line-height: 1.4;
+	}
+	.my-text {
+		font-size: 2.2vw;
+		line-height: 1.5;
+	}
+	.my-small-text {
+		font-size: 2vw;
+		line-height: 1.6;
+	}
+
+	.caraousel-container .controlsContainer,
+	.caraousel-container .controlsContainer1,
+	.caraousel-container .controlsContainer2 {
+		display: none !important;
+		opacity: 0 !important;
+	}
+	li button.nav-link,
+	li a.nav-link {
+		padding: 6px 4px;
+	}
+	.square-container {
+		min-width: 5%;
+	}
+	ul a.list-group-item {
+		padding: 4px 5px;
+		line-height: 100%;
+	}
+	.social-icons a.square-container {
+		padding: 5px;
+		width: 25px;
+		height: 25px;
+	}
+}
+
 p {
 	font-family: sans-serif;
 }
@@ -273,9 +320,10 @@ div.cat-post-number {
 	--bs-btn-hover-border-color: var(--bs-secondary-bg);
 	--bs-btn-focus-shadow-rgb: 130, 138, 145;
 }
-.social-icons a {
-	width: 50px;
-	height: 50px;
+.social-icons a.square-container {
+	padding: 5px;
+	width: 40px;
+	height: 40px;
 }
 .social-icons > a i {
 	width: 100%;
@@ -292,8 +340,4 @@ div.square-container {
 }
 a.square-container {
 	pointer-events: all;
-}
-.square-container {
-	min-width: 50px; /* Set a minimum width for the square */
-	min-height: 50px; /* Set a minimum height for the square */
 }
