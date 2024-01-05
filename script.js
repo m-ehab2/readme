@@ -14,7 +14,7 @@ var slider = tns({
 	items: 3,
 	controls: true,
 	responsive: {
-		350: {
+		1: {
 			items: 1,
 		},
 		768: {
