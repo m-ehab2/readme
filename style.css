@@ -31,11 +31,11 @@ body {
 	font-size: 2vw;
 }
 .my-subheading {
-	font-size: 1.4vw;
+	font-size: 1.5vw;
 	line-height: 100%;
 }
 .my-small-text {
-	font-size: 1vw;
+	font-size: 1.1vw;
 	line-height: 100%;
 }
 @media (max-width: 768px) {
@@ -52,8 +52,15 @@ body {
 		line-height: 1.5;
 	}
 	.my-small-text {
-		font-size: 1.7vw;
+		font-size: 2vw;
 		line-height: 1.6;
+	}
+
+	.caraousel-container .controlsContainer,
+	.caraousel-container .controlsContainer1,
+	.caraousel-container .controlsContainer2 {
+		display: none !important;
+		opacity: 0 !important;
 	}
 }
 p {
@@ -68,7 +75,8 @@ a.navbar-brand:hover span {
 a.navbar-brand:hover b {
 	color: var(--bs-primary);
 }
-.navbar-nav .nav-link:hover {
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:active {
 	color: var(--background);
 	background-color: var(--bs-primary);
 }
@@ -113,7 +121,7 @@ a.navbar-brand:hover b {
 }
 .caraousel-container {
 	position: relative;
-	margin-top: 10px;
+	/* margin-top: 2px; */
 }
 .caraousel-container .controlsContainer,
 .caraousel-container .controlsContainer1,
@@ -205,59 +213,21 @@ div.readmore-link a:hover {
 .sidebar-head .readmore-link {
 	border-bottom: 3px solid var(--bs-primary);
 }
-
 .social-icons li {
 	text-align: center;
+	background-color: transparent;
+	border: 0px;
 }
-
 .social-icons ul {
 	width: 100%;
 }
-.sidebar-post {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-.sidebar-post-text {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-top: 10px;
-	gap: 10px;
-	width: 90%;
-	padding: 5px;
-}
-
 .sidebar-post-text img.circular {
-	background-color: var(--bs-tertiary-bg);
-	width: 30%;
 	border: 1px solid var(--bs-primary);
 	object-fit: cover;
 	object-position: center;
 }
-.sidebar-post-text form {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: start;
-	gap: 10px;
-}
-.input-group {
-	width: 100%;
-}
-.input-group input {
-	width: 100%;
-}
 li.list-group-item {
 	gap: 10px;
-}
-li.list-group-item div.image-thumb,
-li.list-group-item div.post-text {
-	width: 50%;
-}
-li.list-group-item img {
-	width: 100%;
 }
 ul.sidebar-post-small-post li,
 ul.category li {
@@ -276,13 +246,12 @@ ul.category li {
 div.cat-name,
 div.cat-post-number {
 	height: unset;
-	border: 0px;
 	flex: 0;
 }
 .dots {
 	height: 3px;
 	flex-grow: 1;
-	border-bottom: 3px dotted var(--bs-gray-200);
+	border-bottom: 3px dotted var(--bs-gray-400);
 }
 .active {
 	background-color: var(--primary) !important;
@@ -304,4 +273,10 @@ div.cat-post-number {
 .social-icons > a i {
 	width: 100%;
 	height: 100%;
+}
+p.my-small-text {
+	color: var(--bs-gray-600);
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+		sans-serif;
+	line-height: 130%;
 }

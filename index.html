@@ -238,9 +238,9 @@
 				></a>
 			</div>
 		</div>
-		<section id="body-content mt-3 px-3">
-			<div class="container">
-				<div class="row">
+		<section id="body-content ">
+			<div class="container mt-3">
+				<div class="row gx-3">
 					<div class="col-md-8 blog-feed">
 						<div
 							class="blog-post bg-body-tertiary my-4"
@@ -271,8 +271,8 @@
 									<div class="p-2 h-100">
 										<a
 											class="my-subheading"
-											href="#blogPost-2"
-											>22-12-2023</a
+											href="#blogPost-1"
+											>11-11-2023</a
 										>
 									</div>
 									<div class="p-2 h-100">
@@ -921,7 +921,8 @@
 							</div>
 						</div>
 						<div
-							class="pageNumbers list-group my-5 text-right border-0 list-group-horizontal"
+							class="pageNumbers list-group my-5 text-right border-0 list-group-horizontal w-100"
+							id="pageNumbers"
 						>
 							<a
 								href="#"
@@ -939,7 +940,7 @@
 								1
 							</a>
 							<a
-								href="#"
+								href="#pageNumbers"
 								class="list-group-item btn btn-primary mx-1 my-subheading"
 							>
 								2
@@ -992,7 +993,9 @@
 						</div>
 					</div>
 					<div class="col-md-4">
-						<div class="sidebar-post blog-post my-4 px-3 border-1">
+						<div
+							class="sidebar-post blog-post my-4 px-3 d-flex flex-column align-items-center border-1 bg-body-tertiary"
+						>
 							<div
 								class="sidebar-head w-100 py-2 d-flex justify-content-center"
 							>
@@ -1000,13 +1003,15 @@
 									About Me
 								</div>
 							</div>
-							<div class="sidebar-post-text">
+							<div
+								class="sidebar-post-text d-flex flex-column align-items-center my-2 gap-2 w-100 px-2"
+							>
 								<img
 									src="./Assets/images/Semicolon.svg.png"
 									alt=""
-									class="circular w-25 rounded-circle"
+									class="circular w-25 rounded-circle bg-body-secondary"
 								/>
-								<p class="my-small-text text-center text-dark">
+								<p class="my-text text-center text-dark">
 									Engineer turned web developer from Egypt,
 									blending creativity with technology for
 									impactful digital solutions
@@ -1020,7 +1025,7 @@
 										<li
 											class="list-group-item list-group-item-action margin-0 p-2"
 										>
-											<a href="#">
+											<a class="border-0" href="#">
 												<i
 													class="fa-brands fa-facebook my-small-text"
 												>
@@ -1058,29 +1063,28 @@
 								</div>
 							</div>
 						</div>
-						<!-- <div class="sidebar-post blog-post">
-							<div class="sidebar-head">
-								<div class="readmore-link fs-5">
+						<div
+							class="sidebar-post blog-post my-4 px-3my-4 px-3 d-flex flex-column align-items-center border-1 bg-body-tertiary"
+							id="#NewsLetter"
+						>
+							<div
+								class="sidebar-head w-100 py-2 d-flex justify-content-center"
+							>
+								<div class="readmore-link my-subheading">
 									News Letter
 								</div>
 							</div>
-							<div class="sidebar-post-text">
+							<div class="sidebar-post-text my-text">
 								<p>Sign Up to receive latest updates:</p>
 								<form
-									class="form-group needs-validation"
+									class="form-group needs-validation w-100 d-flex flex-column justify-content-center align-items-start gap-2 my-2"
 									novalidate
+									action="#NewsLetter"
 								>
-									<div class="input-group">
-										<div class="input-group-prepend">
-											<span
-												class="input-group-text"
-												id="inputGroupPrepend"
-												>E-mail</span
-											>
-										</div>
+									<div class="input-group w-100">
 										<input
 											type="email"
-											class="form-control"
+											class="form-control w-100"
 											id="validationCustomUsername"
 											placeholder="johndoe@gmail.com"
 											aria-describedby="inputGroupPrepend"
@@ -1099,344 +1103,366 @@
 								</form>
 							</div>
 						</div>
-						<div class="sidebar-post blog-post">
-							<div class="sidebar-head">
-								<div class="readmore-link fs-5">
+						<div
+							class="sidebar-post blog-post my-4 px-3 d-flex flex-column align-items-center border-1 bg-body-tertiary"
+						>
+							<div
+								class="sidebar-head w-100 py-2 d-flex justify-content-center"
+							>
+								<div class="readmore-link my-subheading">
 									Recent Posts
 								</div>
 							</div>
-							<div class="sidebar-post-text">
+							<div class="sidebar-post-text w-100">
 								<ul
-									class="sidebar-post-small-post list-group list-group-flush"
+									class="sidebar-post-small-post list-group list-group-flush w-100"
 								>
 									<li
-										class="list-group-item d-flex text-center align-items-center"
+										class="list-group-item d-flex flex-column align-items-center w-100"
 									>
-										<div class="image-thumb">
-											<a href="#">
-												<img
-													src="./Assets/images/1-secCarasoul.jpg"
-													alt=""
-												/>
+										<h4 class="my-text">
+											<a href="">
+												Planning and Ideation
 											</a>
-										</div>
-										<div class="post-text">
-											<h4 class="fs-5">
-												<a href="">
-													Planning and Ideation
+										</h4>
+										<div
+											class="img_text-sideBar d-flex gap-2 w-100 align-items-center"
+										>
+											<div class="image-thumb w-50">
+												<a href="#" class="">
+													<img
+														src="./Assets/images/1-secCarasoul.jpg"
+														alt=""
+														class="w-100"
+													/>
 												</a>
-											</h4>
-											<p>
-												ideas take shape as the team
-												collaborates on planning and
-												defining the project's goals and
-												requirements.
-											</p>
+											</div>
+											<div class="post-text w-50 p-1">
+												<p class="my-small-text">
+													Team shapes ideas by
+													planning and defining
+													project goals and needs
+													together.
+												</p>
+											</div>
+										</div>
+										<div class="post-text-bottom d-flex">
 											<div
-												class="post-text-bottom d-flex"
+												class="date d-flex align-items-center"
 											>
-												<div
-													class="date d-flex align-items-center"
+												<i
+													class="fa-regular fa-calendar my-small-text"
 												>
-													<i
-														class="fa-regular fa-calendar"
-													>
-													</i>
-													<p
-														class="d-flex align-items-center m-0"
-													>
-														<small>
-															<em>24-12-2023</em>
-														</small>
-													</p>
-												</div>
-												<div
-													class="comments d-flex align-items-center"
+												</i>
+												<p
+													class="d-flex align-items-center m-0 my-small-text"
 												>
-													<i
-														class="fa-regular fa-comments"
-													>
-													</i>
-													<p
-														class="d-flex align-items-center m-0"
-													>
-														<small>
-															<em
-																><a href="#"
-																	>16</a
-																></em
-															>
-														</small>
-													</p>
-												</div>
+													<small>
+														<em
+															class="my-small-text"
+															>24-12-2023</em
+														>
+													</small>
+												</p>
+											</div>
+											<div
+												class="comments d-flex align-items-center"
+											>
+												<i
+													class="fa-regular fa-comments my-small-text"
+												>
+												</i>
+												<p
+													class="d-flex align-items-center m-0"
+												>
+													<small>
+														<em
+															><a
+																href="#"
+																class="my-small-text"
+																>16</a
+															></em
+														>
+													</small>
+												</p>
 											</div>
 										</div>
 									</li>
 									<li
-										class="list-group-item d-flex text-center align-items-center"
+										class="list-group-item d-flex flex-column align-items-center w-100"
 									>
-										<div class="image-thumb">
-											<a href="#">
-												<img
-													src="./Assets/images/2-secCarasoul.jpg"
-													alt=""
-												/>
+										<h4 class="my-text">
+											<a href="">
+												Development and Coding
 											</a>
-										</div>
-										<div class="post-text">
-											<h4 class="fs-5">
-												<a href="">
-													Development and Coding
+										</h4>
+										<div
+											class="img_text-sideBar d-flex gap-2 w-100 align-items-center"
+										>
+											<div class="image-thumb w-50">
+												<a href="#">
+													<img
+														src="./Assets/images/2-secCarasoul.jpg"
+														alt=""
+														class="w-100"
+													/>
 												</a>
-											</h4>
-											<p>
-												The development phase kicks off,
-												where lines of code transform
-												concepts into a functional
-												reality.
-											</p>
+											</div>
+											<div class="post-text w-50 p-1">
+												<p class="my-small-text">
+													The development phase kicks
+													off, where lines of code
+													transform concepts into a
+													functional reality.
+												</p>
+											</div>
+										</div>
+										<div class="post-text-bottom d-flex">
 											<div
-												class="post-text-bottom d-flex"
+												class="date d-flex align-items-center my-small-text"
 											>
-												<div
-													class="date d-flex align-items-center"
+												<i
+													class="fa-regular fa-calendar my-small-text"
 												>
-													<i
-														class="fa-regular fa-calendar"
-													>
-													</i>
-													<p
-														class="d-flex align-items-center m-0"
-													>
-														<small>
-															<em>24-11-2023</em>
-														</small>
-													</p>
-												</div>
-												<div
-													class="comments d-flex align-items-center"
+												</i>
+												<p
+													class="d-flex align-items-center m-0 my-small-text"
 												>
-													<i
-														class="fa-regular fa-comments"
-													>
-													</i>
-													<p
-														class="d-flex align-items-center m-0"
-													>
-														<small>
-															<em
-																><a href="#"
-																	>13</a
-																></em
-															>
-														</small>
-													</p>
-												</div>
+													<small>
+														<em
+															class="my-small-text"
+															>23-11-2023</em
+														>
+													</small>
+												</p>
+											</div>
+											<div
+												class="comments d-flex align-items-center"
+											>
+												<i
+													class="fa-regular fa-comments my-small-text"
+												>
+												</i>
+												<p
+													class="d-flex align-items-center m-0"
+												>
+													<small>
+														<em
+															><a
+																href="#"
+																class="my-small-text"
+																>13</a
+															></em
+														>
+													</small>
+												</p>
 											</div>
 										</div>
 									</li>
 									<li
-										class="list-group-item d-flex text-center align-items-center"
+										class="list-group-item d-flex flex-column align-items-center w-100"
 									>
-										<div class="image-thumb">
-											<a href="#">
-												<img
-													src="./Assets/images/3-secCarasoul.jpg"
-													alt=""
-												/>
+										<h4 class="my-text">
+											<a href="">
+												Testing and Deployment
 											</a>
-										</div>
-										<div class="post-text">
-											<h4 class="fs-5">
-												<a href="">
-													Testing and Deployment
+										</h4>
+										<div
+											class="img_text-sideBar d-flex gap-2 w-100 align-items-center"
+										>
+											<div class="image-thumb w-50">
+												<a href="#">
+													<img
+														src="./Assets/images/3-secCarasoul.jpg"
+														alt=""
+														class="w-100"
+													/>
 												</a>
-											</h4>
-											<p>
-												Testing ensures the product
-												meets standards, and deployment
-												marks the culmination of
-												efforts.
-											</p>
+											</div>
+											<div class="post-text w-50">
+												<p class="my-small-text">
+													Testing ensures the product
+													meets standards, and
+													deployment marks the
+													culmination of efforts.
+												</p>
+											</div>
+										</div>
+										<div class="post-text-bottom d-flex">
 											<div
-												class="post-text-bottom d-flex"
+												class="date d-flex align-items-center"
 											>
-												<div
-													class="date d-flex align-items-center"
+												<i
+													class="fa-regular fa-calendar my-small-text"
 												>
-													<i
-														class="fa-regular fa-calendar"
-													>
-													</i>
-													<p
-														class="d-flex align-items-center m-0"
-													>
-														<small>
-															<em>24-11-2023</em>
-														</small>
-													</p>
-												</div>
-												<div
-													class="comments d-flex align-items-center"
+												</i>
+												<p
+													class="d-flex align-items-center m-0 my-small-text"
 												>
-													<i
-														class="fa-regular fa-comments"
-													>
-													</i>
-													<p
-														class="d-flex align-items-center m-0"
-													>
-														<small>
-															<em
-																><a href="#"
-																	>13</a
-																></em
-															>
-														</small>
-													</p>
-												</div>
+													<small>
+														<em
+															class="my-small-text"
+															>11-12-2023</em
+														>
+													</small>
+												</p>
+											</div>
+											<div
+												class="comments d-flex align-items-center"
+											>
+												<i
+													class="fa-regular fa-comments my-small-text"
+												>
+												</i>
+												<p
+													class="d-flex align-items-center m-0"
+												>
+													<small>
+														<em
+															><a
+																href="#"
+																class="my-small-text"
+																>26</a
+															></em
+														>
+													</small>
+												</p>
 											</div>
 										</div>
 									</li>
 								</ul>
-								<div
-									class="social-icons container d-flex justify-content-center"
-								>
-									<ul
-										class="list-group list-group-horizontal pull-left"
-									>
-										<li
-											class="list-group-item list-group-item-action"
-										>
-											<a href="#facebook">
-												<i
-													class="fa-brands fa-facebook"
-												>
-												</i>
-											</a>
-										</li>
-										<li
-											class="list-group-item list-group-item-action"
-										>
-											<a href="#">
-												<i
-													class="fa-brands fa-twitter"
-												></i>
-											</a>
-										</li>
-										<li
-											class="list-group-item list-group-item-action"
-										>
-											<a href="#">
-												<i
-													class="fa-brands fa-google-plus-g"
-												></i>
-											</a>
-										</li>
-										<li
-											class="list-group-item list-group-item-action"
-										>
-											<a href="#">
-												<i
-													class="fa-regular fa-envelope"
-												></i>
-											</a>
-										</li>
-									</ul>
-								</div>
 							</div>
 						</div>
-						<div class="sidebar-post blog-post">
-							<div class="sidebar-head">
-								<div class="readmore-link fs-5">Categories</div>
+						<div
+							class="sidebar-post blog-post my-4 px-3 d-flex flex-column align-items-center border-1 bg-body-tertiary"
+						>
+							<div
+								class="sidebar-head w-100 py-2 d-flex justify-content-center"
+							>
+								<div class="readmore-link my-subheading">
+									Categories
+								</div>
 							</div>
-							<div class="sidebar-post-text">
+							<div class="sidebar-post-text w-100">
 								<ul
 									class="category list-group list-group-flush w-100"
 								>
 									<li
 										class="list-group-item d-flex text-center align-items-center w-100 border-0"
 									>
-										<div class="cat-name readmore-link">
+										<div
+											class="cat-name readmore-link border-0"
+										>
 											<span
-												><a href="#" class="link">
+												><a
+													href="#"
+													class="link my-text"
+												>
 													Learning
 												</a></span
 											>
 										</div>
 										<div class="dots"></div>
-										<div class="cat-post-number">
+										<div class="cat-post-number my-text">
 											<em>(15)</em>
 										</div>
 									</li>
 									<li
 										class="list-group-item d-flex text-center align-items-center w-100 border-0"
 									>
-										<div class="cat-name readmore-link">
+										<div
+											class="cat-name readmore-link border-0"
+										>
 											<span
-												><a href="#" class="link">
+												><a
+													href="#"
+													class="link my-text border-0"
+												>
 													Teamwork
 												</a></span
 											>
 										</div>
 										<div class="dots"></div>
-										<div class="cat-post-number">
+										<div
+											class="cat-post-number my-text border-0"
+										>
 											<em>(20)</em>
 										</div>
 									</li>
 									<li
 										class="list-group-item d-flex text-center align-items-center w-100 border-0"
 									>
-										<div class="cat-name readmore-link">
+										<div
+											class="cat-name readmore-link border-0"
+										>
 											<span
-												><a href="#" class="link">
+												><a
+													href="#"
+													class="link my-text border-0"
+												>
 													Productivity
 												</a></span
 											>
 										</div>
 										<div class="dots"></div>
-										<div class="cat-post-number">
+										<div class="cat-post-number my-text">
 											<em>(34)</em>
 										</div>
 									</li>
 									<li
 										class="list-group-item d-flex text-center align-items-center w-100 border-0"
 									>
-										<div class="cat-name readmore-link">
+										<div
+											class="cat-name readmore-link border-0"
+										>
 											<span
-												><a href="#" class="link">
+												><a
+													href="#"
+													class="link my-text"
+												>
 													Design
 												</a></span
 											>
 										</div>
 										<div class="dots"></div>
-										<div class="cat-post-number">
+										<div class="cat-post-number my-text">
 											<em>(14)</em>
 										</div>
 									</li>
 									<li
 										class="list-group-item d-flex text-center align-items-center w-100 border-0"
 									>
-										<div class="cat-name readmore-link">
+										<div
+											class="cat-name readmore-link border-0"
+										>
 											<span
-												><a href="#" class="link">
+												><a
+													href="#"
+													class="link my-text"
+												>
 													Career
 												</a></span
 											>
 										</div>
 										<div class="dots"></div>
-										<div class="cat-post-number">
+										<div class="cat-post-number my-text">
 											<em>(7)</em>
 										</div>
 									</li>
 								</ul>
 							</div>
 						</div>
-						<div class="sidebar-post blog-post">
-							<div class="sidebar-head">
-								<div class="readmore-link fs-5">Ads</div>
+						<div
+							class="sidebar-post blog-post my-4 px-3 d-flex flex-column align-items-center border-1 bg-body-tertiary"
+						>
+							<div
+								class="sidebar-head w-100 py-2 d-flex justify-content-center"
+							>
+								<div class="readmore-link my-subheading">
+									Ads
+								</div>
 							</div>
-							<div class="sidebar-post-text">
+							<div class="sidebar-post-text w-100 my-2">
 								<a href="#">
 									<img
 										src="./Assets/images/ad1.jpg"
@@ -1444,7 +1470,7 @@
 										class="ad-pic w-100"
 									/>
 								</a>
-								<p>
+								<p class="my-small-text">
 									Lorem ipsum dolor sit, amet consectetur
 									adipisicing elit. Repellat repudiandae atque
 									placeat qui debitis deserunt maiores, harum
@@ -1457,23 +1483,28 @@
 								</a>
 							</div>
 						</div>
-						<div class="sidebar-post blog-post">
-							<div class="sidebar-head">
-								<div class="readmore-link fs-5">
+						<div
+							class="sidebar-post blog-post my-4 px-3 d-flex flex-column align-items-center border-1 bg-body-tertiary"
+						>
+							<div
+								class="sidebar-head w-100 py-2 d-flex justify-content-center"
+							>
+								<div class="readmore-link my-subheading">
 									Slider Posts
 								</div>
 							</div>
-							<div class="sidebar-post-text">
+							<div class="sidebar-post-text w-100">
 								<div class="carousel-container w-100">
 									<div
 										class="itemThumbs carasoul-itemThumbs w-100"
 									>
-										<div class="caraousel-container">
-											<div id="responsive2">
+										<div class="caraousel-container w-100">
+											<div id="responsive2" class="">
 												<div class="">
 													<img
 														src="./Assets/images/1-secCarasoul.jpg"
 														alt=""
+														class="w-100"
 													/>
 													<div
 														class="post-text-bottom d-flex my-2 w-100 justify-content-center"
@@ -1490,7 +1521,7 @@
 															>
 																<small>
 																	<em
-																		>24-12-2023</em
+																		>12-12-2022</em
 																	>
 																</small>
 															</p>
@@ -1509,7 +1540,7 @@
 																	<em
 																		><a
 																			href="#"
-																			>16</a
+																			>13</a
 																		></em
 																	>
 																</small>
@@ -1613,7 +1644,9 @@
 													</div>
 												</div>
 											</div>
-											<div class="controlsContainer2">
+											<div
+												class="controlsContainer2 d-flex justify-content-between w-100"
+											>
 												<a
 													class="prevButton btn btn-primary"
 													href="#responsive2"
@@ -1634,7 +1667,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="sidebar-post blog-post">
+						<!--		<div class="sidebar-post blog-post">
 							<div class="sidebar-head">
 								<div class="readmore-link fs-5">
 									Popular Tags
