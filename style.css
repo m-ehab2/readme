@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Quicksand:700|Khula:400");
 
-body {
+/* body {
 	width: 100%;
-}
+} */
 :root {
 	--primary: #fe460b;
 	--secondary: #f19f7f;
@@ -76,9 +76,9 @@ a.navbar-brand:hover b {
 	color: var(--bs-primary);
 }
 .navbar-nav .nav-link:hover,
-.navbar-nav .nav-link:active {
-	color: var(--background);
-	background-color: var(--bs-primary);
+.navbar-nav .nav-link.active {
+	color: var(--background) !important;
+	background-color: var(--bs-primary) !important;
 }
 .navbar-toggler-icon:hover.navbar-toggler-icon:focus {
 	color: var(--bs-primary);
@@ -204,11 +204,12 @@ div.readmore-link a {
 div.readmore-link a:hover {
 	color: var(--bs-primary);
 }
-.itemThumbs * {
+/* .itemThumbs * {
 	width: 100%;
-}
+} */
 .itemThumbs iframe {
 	height: 500px;
+	width: 100%;
 }
 .sidebar-head .readmore-link {
 	border-bottom: 3px solid var(--bs-primary);
