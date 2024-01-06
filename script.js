@@ -47,7 +47,11 @@ setInterval(() => {
 setTimeout(() => {
 	slider.goTo("next");
 }, 2000);
-
+console.log($(".carousel-container"));
+$("div.respnosive-ow").on("mouseover", function () {
+	slider.autoplay = false;
+	console.log(this);
+});
 var slider1 = tns({
 	items: 1,
 	controls: true,

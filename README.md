@@ -1,4 +1,4 @@
-# TechHub Interactive Blog
+# readme Interactive Blog V0.1
 
 ![Website Screenshot](./readme.png)
 
@@ -15,6 +15,10 @@ Explore readme now: [Live Website](https://m-ehab2.github.io/readme/)
 -   **Responsive Design:** Seamlessly experience readme across various devices.
 -   **Bootstrap Integration:** Modern and consistent UI powered by Bootstrap.
 -   **jQuery Enhancements:** Dynamic and interactive elements crafted with jQuery.
+
+## Updates
+
+-   **V0.1:** Modified the padding as it was too close on desktop
 
 ## Getting Started
 
