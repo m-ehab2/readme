@@ -80,15 +80,15 @@
 		line-height: 1.2;
 	}
 	.my-subheading {
-		font-size: 2.6vw;
+		font-size: 2.5vw;
 		line-height: 1.4;
 	}
 	.my-text {
-		font-size: 2.2vw;
+		font-size: 2.7vw;
 		line-height: 1.5;
 	}
 	.my-small-text {
-		font-size: 2vw;
+		font-size: 2.7vw;
 		line-height: 1.6;
 	}
 
@@ -124,12 +124,14 @@ p {
 }
 a.navbar-brand:hover span {
 	color: var(--dark);
+	transition: all 0.25s ease-in-out;
 }
 .footerlogo a.navbar-brand:hover b {
 	color: var(--bs-secondary-bg);
 }
 a.navbar-brand:hover b {
 	color: var(--bs-primary);
+	transition: all 0.25s ease-in-out;
 }
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {

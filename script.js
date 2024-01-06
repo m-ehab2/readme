@@ -10,15 +10,18 @@
 // 	});
 // 	$carousel.data("translateX", translateX);
 // });
+
 var slider = tns({
 	items: 3,
 	controls: true,
 	responsive: {
 		1: {
 			items: 1,
+			// autoplay: true,
+			// autoplayTimeout: 5000,
 		},
 		768: {
-			items: 3,
+			items: 2,
 		},
 	},
 
@@ -31,7 +34,20 @@ var slider = tns({
 	gutter: 5,
 	// autoplay: true,
 	// autoplayTimeout: 3000,
+	// autoplayHoverPause: true,
+	// autoplayButtonOutput: false,
 });
+slider.events.on("touchStart", () => {
+	console.log("ss");
+	slider.pause();
+});
+setInterval(() => {
+	slider.goTo("next");
+}, 4000);
+setTimeout(() => {
+	slider.goTo("next");
+}, 2000);
+
 var slider1 = tns({
 	items: 1,
 	controls: true,
@@ -42,6 +58,10 @@ var slider1 = tns({
 	controlsContainer: ".controlsContainer1",
 	mouseDrag: true,
 	gutter: 5,
+	autoplay: true,
+	autoplayTimeout: 3000,
+	autoplayHoverPause: true,
+	autoplayButtonOutput: false,
 });
 var slider2 = tns({
 	items: 1,
@@ -53,6 +73,10 @@ var slider2 = tns({
 	controlsContainer: ".controlsContainer2",
 	mouseDrag: true,
 	gutter: 5,
+	autoplay: true,
+	autoplayTimeout: 3000,
+	autoplayHoverPause: true,
+	autoplayButtonOutput: false,
 });
 
 // function prevent(e) {
