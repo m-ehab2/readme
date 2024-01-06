@@ -4,23 +4,23 @@
 
 ## Overview
 
-Welcome to TechHub Interactive Blog, a dynamic platform tailored for tech-savvy college students. This space is crafted to foster collaboration, learning, and the exchange of ideas around the latest trends and innovations in the tech world. Dive into a vibrant community where exploration and knowledge-sharing thrive.
+Welcome to readme Interactive Blog, a dynamic platform tailored for tech-savvy college students. This space is crafted to foster collaboration, learning, and the exchange of ideas around the latest trends and innovations in the tech world. Dive into a vibrant community where exploration and knowledge-sharing thrive.
 
 ## Live Website
 
-Explore TechHub now: [Live Website](https://m-ehab2.github.io/TechBlog/)
+Explore readme now: [Live Website](https://m-ehab2.github.io/readme/)
 
 ## Features
 
--   **Responsive Design:** Seamlessly experience TechHub across various devices.
+-   **Responsive Design:** Seamlessly experience readme across various devices.
 -   **Bootstrap Integration:** Modern and consistent UI powered by Bootstrap.
 -   **jQuery Enhancements:** Dynamic and interactive elements crafted with jQuery.
 
 ## Getting Started
 
-To explore TechHub, follow these simple steps:
+To explore readme, follow these simple steps:
 
-1. Clone the repository: `git clone https://m-ehab2.github.io/TechBlog/`
+1. Clone the repository: `git clone https://m-ehab2.github.io/readme/`
 2. Open the `index.html` file in your preferred browser.
 
 ## Usage
@@ -50,7 +50,7 @@ For any inquiries or suggestions, feel free to reach out to Muhamed Ehab at [muh
 
 ## Project Status
 
-TechHub is currently in development. Your feedback and contributions are highly appreciated!
+readme is currently in development. Your feedback and contributions are highly appreciated!
 
 ## Future Plans
 
