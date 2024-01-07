@@ -384,6 +384,10 @@ a.square-container {
 		transform: rotate(360deg);
 	}
 }
+.slider-nav-container div {
+	width: 15px;
+	height: 15px;
+}
 .footer-social a {
 	color: var(--bs-body-bg);
 	font-size: large;
@@ -504,4 +508,25 @@ a.square-container {
 }
 a {
 	transition: all 0.1s ease-in-out;
+}
+
+.tns-nav {
+	margin-top: 10px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+}
+.tns-nav button {
+	border-radius: 50%;
+	height: 15px;
+	width: 15px;
+	border: 0px;
+	padding: 0px;
+	background-color: rgba(var(--bs-primary-rgb), 0.6);
+	transition: all 0.3s ease-in-out;
+}
+button.tns-nav-active {
+	background-color: rgba(var(--bs-primary-rgb), 1);
 }

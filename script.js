@@ -4,8 +4,6 @@ var slider = tns({
 	responsive: {
 		1: {
 			items: 1,
-			// autoplay: true,
-			// autoplayTimeout: 5000,
 		},
 		768: {
 			items: 2,
@@ -14,16 +12,13 @@ var slider = tns({
 
 	container: "#responsive",
 	swipeAngle: false,
-	speed: 200,
-	nav: false,
+	speed: 300,
+	nav: true,
 	controlsContainer: ".controlsContainer",
 	mouseDrag: true,
 	gutter: 5,
-	// autoplay: true,
-	// autoplayTimeout: 5000,
-	// nav: true,
-	// navPosition: "bottom",
 	preventScrollOnTouch: "force",
+	navPosition: "bottom",
 });
 
 var slider1 = tns({
@@ -31,30 +26,28 @@ var slider1 = tns({
 	controls: true,
 	container: "#responsive1",
 	swipeAngle: false,
-	speed: 200,
-	nav: false,
+	speed: 300,
+	nav: true,
 	controlsContainer: ".controlsContainer1",
 	mouseDrag: true,
 	gutter: 5,
-	autoplay: true,
-	autoplayTimeout: 5000,
 	autoplayHoverPause: true,
 	autoplayButtonOutput: false,
+	navPosition: "bottom",
 });
 var slider2 = tns({
 	items: 1,
 	controls: true,
 	container: "#responsive2",
 	swipeAngle: false,
-	speed: 200,
-	nav: false,
+	speed: 300,
+	nav: true,
 	controlsContainer: ".controlsContainer2",
 	mouseDrag: true,
 	gutter: 5,
-	autoplay: true,
-	autoplayTimeout: 5000,
 	autoplayHoverPause: true,
 	autoplayButtonOutput: false,
+	navPosition: "bottom",
 });
 
 (function () {

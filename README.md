@@ -25,6 +25,7 @@ Explore readme now: [Live Website](https://m-ehab2.github.io/readme/)
     -   Modified footer text weight to be bolder.
     -   Added a dark mode.
     -   Reimplemented footer Logos.
+    -   Added a slider nav to all carousels.
 -   **V0.2:**
     -   Modified Images for slider to make it take less height of the window.
     -   Added a fade effect to all posts.
@@ -75,7 +76,7 @@ Stay tuned for upcoming features, including **_Commenting Features, Login and Si
 
 Special thanks to the following individuals for their valuable feedback, support, and encouragement during the development of this project:
 
--   My Cousin Sama.
+-   My Cousin Sama, My Brother Ahmed.
 
 -   My colleagues Youssif, Samah, Rami and Renad for their insightful input and collaboration.
 
