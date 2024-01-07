@@ -116,12 +116,11 @@
 		height: 25px;
 	}
 }
-
 p {
 	font-family: "Poppins";
 }
 .navbar-nav .nav-link {
-	transition: all 0.25s linear;
+	transition: all 0.25s ease-in-out;
 }
 a.navbar-brand:hover span {
 	color: var(--dark);
@@ -180,7 +179,6 @@ a.navbar-brand:hover b {
 }
 .caraousel-container {
 	position: relative;
-	/* margin-top: 2px; */
 }
 .caraousel-container .controlsContainer,
 .caraousel-container .controlsContainer1,
@@ -296,7 +294,7 @@ ul.category li {
 .post-text-bottom div {
 	gap: 3px;
 	background-color: var(--bs-gray-200);
-	color: var(--primary);
+	color: var(--bs-primary);
 	padding: 5px;
 	border-radius: 3px;
 }
@@ -311,7 +309,7 @@ div.cat-post-number {
 	border-bottom: 3px dotted var(--bs-gray-400);
 }
 .active {
-	background-color: var(--primary) !important;
+	background-color: var(--bs-primary) !important;
 	border-color: unset !important;
 }
 .btn-secondary {
@@ -343,4 +341,41 @@ div.square-container {
 }
 a.square-container {
 	pointer-events: all;
+}
+.blog-post {
+	opacity: 0;
+	transform: translateY(20px);
+	transition: all 0.5s ease-in-out;
+}
+.loading-screen {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(
+		var(--bs-body-bg-rgb),
+		0.9
+	); /* Semi-transparent white background */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000; /* Ensure the loading screen is on top of other elements */
+}
+
+.spinner {
+	border: 8px solid #f3f3f3;
+	border-top: 8px solid var(--bs-primary);
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	animation: spin 1s linear infinite; /* Rotation animation */
+}
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
 }

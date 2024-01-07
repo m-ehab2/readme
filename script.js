@@ -1,16 +1,3 @@
-// $(".main-carasoul-main-body").click(function (e) {
-// 	let $carousel = $(this);
-// 	let $cards = $carousel.children(".card");
-// 	let cardWidth = $cards.eq(0).outerWidth(true); // Include margins
-// 	let translateX = $carousel.data("translateX") || 0; // Initial translation or 0
-// 	translateX -= cardWidth;
-// 	$carousel.css({
-// 		transform: `translateX(${translateX}px)`,
-// 		transition: "transform 0.5s ease",
-// 	});
-// 	$carousel.data("translateX", translateX);
-// });
-
 var slider = tns({
 	items: 3,
 	controls: true,
@@ -33,25 +20,12 @@ var slider = tns({
 	mouseDrag: true,
 	gutter: 5,
 	// autoplay: true,
-	// autoplayTimeout: 3000,
-	// autoplayHoverPause: true,
-	// autoplayButtonOutput: false,
+	// autoplayTimeout: 5000,
+	// nav: true,
+	// navPosition: "bottom",
+	preventScrollOnTouch: "force",
 });
-slider.events.on("touchStart", () => {
-	console.log("ss");
-	slider.pause();
-});
-setInterval(() => {
-	slider.goTo("next");
-}, 4000);
-setTimeout(() => {
-	slider.goTo("next");
-}, 2000);
-console.log($(".carousel-container"));
-$("div.respnosive-ow").on("mouseover", function () {
-	slider.autoplay = false;
-	console.log(this);
-});
+
 var slider1 = tns({
 	items: 1,
 	controls: true,
@@ -63,7 +37,7 @@ var slider1 = tns({
 	mouseDrag: true,
 	gutter: 5,
 	autoplay: true,
-	autoplayTimeout: 3000,
+	autoplayTimeout: 5000,
 	autoplayHoverPause: true,
 	autoplayButtonOutput: false,
 });
@@ -78,15 +52,11 @@ var slider2 = tns({
 	mouseDrag: true,
 	gutter: 5,
 	autoplay: true,
-	autoplayTimeout: 3000,
+	autoplayTimeout: 5000,
 	autoplayHoverPause: true,
 	autoplayButtonOutput: false,
 });
 
-// function prevent(e) {
-// 	console.log("ss");
-// 	e.preventdefault();
-// }
 (function () {
 	"use strict";
 	window.addEventListener(
@@ -115,3 +85,28 @@ var slider2 = tns({
 		false
 	);
 })();
+const sidebarPosts = document.querySelectorAll(".blog-post");
+const options = {
+	root: null,
+	rootMargin: "0px",
+	threshold: 0.1,
+};
+const observer = new IntersectionObserver(function (entries, observer) {
+	console.log(entries);
+	entries.forEach((entry) => {
+		console.log(entries);
+		if (entry.isIntersecting) {
+			entry.target.style.opacity = 1;
+			entry.target.style.transform = "translateY(0)";
+			observer.unobserve(entry.target);
+		}
+	});
+}, options);
+sidebarPosts.forEach((e) => {
+	observer.observe(e);
+});
+document.addEventListener("DOMContentLoaded", function () {
+	// Hide the loading screen when the page has finished loading
+	const loadingScreen = document.getElementById("loadingScreen");
+	loadingScreen.style.display = "none";
+});

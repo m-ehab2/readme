@@ -1,4 +1,4 @@
-# readme Interactive Blog V0.1
+# readme Interactive Blog V0.2
 
 ![Website Screenshot](./readme.png)
 
@@ -15,9 +15,15 @@ Explore readme now: [Live Website](https://m-ehab2.github.io/readme/)
 -   **Responsive Design:** Seamlessly experience readme across various devices.
 -   **Bootstrap Integration:** Modern and consistent UI powered by Bootstrap.
 -   **jQuery Enhancements:** Dynamic and interactive elements crafted with jQuery.
+-   **Loading Screen:** A subtle loading screen with a spinner animation provides visual feedback during the initial page load.
+-   **TinySlider:** Utilize the TinySlider tool for a smooth and responsive slider feature, showcasing content in an engaging and dynamic manner.
 
 ## Updates
 
+-   **V0.2:**
+    -   Modified Images for slider to make it shorter.
+    -   Added a fade effect to all posts.
+    -   Implemented a loading screen.
 -   **V0.1:** Modified the padding as it was too close on desktop
 
 ## Getting Started
@@ -50,7 +56,7 @@ Navigate through the intuitive interface to discover:
 
 ## Contact
 
-For any inquiries or suggestions, feel free to reach out to Muhamed Ehab at [muhamedehab1@gmail.com].
+For any inquiries or suggestions, feel free to reach out to Muhamed Ehab at [Gmail](mailto:muhamedehab1@gmail.com?subject=Readme%20Blog%20Repo)
 
 ## Project Status
 

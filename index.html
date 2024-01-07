@@ -20,6 +20,9 @@
 		<link rel="icon" href="./Assets/images/Asset 2.svg" type="svg" />
 	</head>
 	<body>
+		<div class="loading-screen" id="loadingScreen">
+			<div class="spinner"></div>
+		</div>
 		<nav
 			class="navbar sticky-top navbar-expand-md px-2 border-bottom border-3 border-primary bg-secondary"
 		>
@@ -80,7 +83,7 @@
 								</li>
 								<li>
 									<a class="dropdown-item my-text" href="#">
-										>HTML/CSS</a
+										HTML/CSS</a
 									>
 								</li>
 								<li><hr class="dropdown-divider" /></li>
@@ -106,7 +109,7 @@
 				</div>
 			</div>
 		</nav>
-		<div class="caraousel-container">
+		<div class="caraousel-container mt-3">
 			<div id="responsive" class="main-slider">
 				<div class="card border-0">
 					<img
@@ -117,10 +120,8 @@
 					<div class="card-body bg-body-tertiary w-100">
 						<h5 class="card-title my-heading">Coding in Action</h5>
 						<p class="card-text my-text font-weight-bold">
-							Image Description: Uncover the coder's world as he
-							leans against the wall, crafting lines of genius on
-							his laptop. Join us behind the screen for a peek
-							into the art of coding.
+							Uncover the coder's world as he leans against the
+							wall, crafting lines of genius on his laptop.
 						</p>
 						<a href="#" class="btn btn-primary my-text">
 							Debug Some Code
@@ -139,10 +140,7 @@
 						</h5>
 						<p class="card-text my-text">
 							Discover the world of coding from a cozy café
-							corner. 🚀☕ Peek into the tech life as hands
-							gracefully dance on a laptop, crafting innovation
-							one line at a time. Join us for a glimpse of
-							inspiration in every keystroke.
+							corner.
 						</p>
 						<a href="#" class="btn btn-primary my-text"
 							>Have a Drink</a
@@ -161,11 +159,8 @@
 							Precision
 						</h5>
 						<p class="card-text my-text">
-							Dive into MERN – MongoDB, Express.js, React, Node.js
-							– and master the art of building powerful, scalable
-							web applications. 🚀💻 Join us in exploring the
-							synergy of server-side and client-side development,
-							creating a seamless and modern web experience.
+							Dive into MERN and master the art of building
+							powerful, scalable web applications.
 						</p>
 						<a href="#" class="btn btn-primary my-text">Learn It</a>
 					</div>
@@ -182,11 +177,7 @@
 						</h5>
 						<p class="card-text my-text">
 							Explore the art of coding accompanied by the
-							timeless duo – pen and notepad. 📝💻 Uncover the
-							beauty of blending digital innovation with the
-							tactile feel of analog note-taking. Join us as we
-							embark on a journey where creativity flows
-							seamlessly from the screen to paper.
+							timeless duo – pen and notepad.
 						</p>
 						<a href="#" class="btn btn-primary my-text"
 							>Create Something</a
@@ -195,7 +186,7 @@
 				</div>
 				<div class="card border-0">
 					<img
-						src="./Assets/images/Unofficial_JavaScript_logo_2.svg.png"
+						src="./Assets/images/Unofficial_JavaScript_logo_2_1.jpg"
 						class="card-img-top d-block"
 						alt="Javascript Logo"
 					/>
@@ -207,11 +198,7 @@
 						<p class="card-text my-text">
 							Dive into the heart of web development with
 							JavaScript – the language that powers the
-							interactive web. ⚡🌐 Let's unravel the mysteries
-							behind the iconic logo and explore the endless
-							possibilities it brings to the digital realm. Join
-							us in celebrating the elegance and efficiency of
-							JavaScript.
+							interactive web.
 						</p>
 						<a href="#" class="btn btn-primary my-text"
 							>Debug Some Code</a
@@ -232,11 +219,7 @@
 						<p class="card-text my-text">
 							Witness the synergy of minds as a group collaborates
 							on UI design, sketching the blueprint of future
-							digital experiences on a whiteboard canvas. 🎨💡
-							Immerse yourself in the creative process, where each
-							stroke brings life to innovative UI elements. Join
-							the journey of turning ideas into visual
-							masterpieces! 🖌️🌐
+							digital experiences on a whiteboard canvas.
 						</p>
 						<a href="#" class="btn btn-primary my-text"
 							>Grab a Chair</a
@@ -256,7 +239,7 @@
 		<section id="body-content ">
 			<div class="container mt-3 w-100 d-flex justify-content-center">
 				<div class="row gx-5 w-100">
-					<div class="col-12 col-md-9 blog-feed p-0 px-md-3">
+					<div class="col-12 col-md-9 blog-feed p-0 px-md-3 g-5">
 						<div
 							class="blog-post bg-body-tertiary my-4"
 							id="blogPost-1"
@@ -1017,7 +1000,7 @@
 							</ul>
 						</div> -->
 					</div>
-					<div class="col-12 col-md-3 p-0 px-md-3">
+					<div class="col-12 col-md-3 p-0 px-md-3 g-5">
 						<div
 							class="sidebar-post blog-post my-4 px-3 d-flex flex-column align-items-center border-1 bg-body-tertiary"
 						>
@@ -1090,7 +1073,7 @@
 						</div>
 						<div
 							class="sidebar-post blog-post my-4 px-3my-4 px-3 d-flex flex-column align-items-center border-1 bg-body-tertiary"
-							id="#NewsLetter"
+							id="NewsLetter"
 						>
 							<div
 								class="sidebar-head w-100 py-2 d-flex justify-content-center"
@@ -1129,6 +1112,7 @@
 							</div>
 						</div>
 						<div
+							id="RecentPosts"
 							class="sidebar-post blog-post my-4 px-3 d-flex flex-column align-items-center border-1 bg-body-tertiary"
 						>
 							<div
