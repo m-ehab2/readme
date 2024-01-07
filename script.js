@@ -92,9 +92,9 @@ const options = {
 	threshold: 0.1,
 };
 const observer = new IntersectionObserver(function (entries, observer) {
-	console.log(entries);
+	// console.log(entries);
 	entries.forEach((entry) => {
-		console.log(entries);
+		// console.log(entries);
 		if (entry.isIntersecting) {
 			entry.target.style.opacity = 1;
 			entry.target.style.transform = "translateY(0)";
@@ -109,4 +109,12 @@ document.addEventListener("DOMContentLoaded", function () {
 	// Hide the loading screen when the page has finished loading
 	const loadingScreen = document.getElementById("loadingScreen");
 	loadingScreen.style.display = "none";
+});
+const htmlTag = document.documentElement;
+$("#modeSwitch").click(function () {
+	if (this.checked) {
+		$("html").attr("data-bs-theme", "dark");
+	} else {
+		$("html").attr("data-bs-theme", "light");
+	}
 });

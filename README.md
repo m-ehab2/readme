@@ -1,4 +1,4 @@
-# readme Interactive Blog V0.2
+# readme Interactive Blog V0.3
 
 ![Website Screenshot](./readme.png)
 
@@ -17,11 +17,16 @@ Explore readme now: [Live Website](https://m-ehab2.github.io/readme/)
 -   **jQuery Enhancements:** Dynamic and interactive elements crafted with jQuery.
 -   **Loading Screen:** A subtle loading screen with a spinner animation provides visual feedback during the initial page load.
 -   **TinySlider:** Utilize the TinySlider tool for a smooth and responsive slider feature, showcasing content in an engaging and dynamic manner.
+-   **Dark Mode:** Improve your reading comfort with our Dark Mode feature, allowing you to seamlessly switch between light and dark themes for a personalized and eye-friendly browsing experience.
 
 ## Updates
 
+-   **V0.3:**
+    -   Modified footer text weight to be bolder.
+    -   Added a dark mode.
+    -   Reimplemented footer Logos.
 -   **V0.2:**
-    -   Modified Images for slider to make it shorter.
+    -   Modified Images for slider to make it take less height of the window.
     -   Added a fade effect to all posts.
     -   Implemented a loading screen.
 -   **V0.1:** Modified the padding as it was too close on desktop
@@ -65,3 +70,15 @@ readme is currently in development. Your feedback and contributions are highly a
 ## Future Plans
 
 Stay tuned for upcoming features, including **_Commenting Features, Login and Signup, etc._**.
+
+## Acknowledgments
+
+Special thanks to the following individuals for their valuable feedback, support, and encouragement during the development of this project:
+
+-   My Cousin Sama.
+
+-   My colleagues Youssif, Samah, Rami and Renad for their insightful input and collaboration.
+
+-   Friends who provided constructive feedback and encouragement throughout the project's journey.
+
+Your contributions have been instrumental in shaping and improving this project. Thank you for your time, dedication, and support.
